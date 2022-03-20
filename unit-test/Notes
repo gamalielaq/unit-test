@@ -1,0 +1,7 @@
+
+// Describe --> Agrupar pruebas
+describe('Prueba de Strings');
+
+
+// it --> sirve para hacer una evaluacion en concreto o una para hacer una prueba en espesifico
+it('Deve de regresar un string');
