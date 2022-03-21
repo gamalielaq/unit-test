@@ -10,7 +10,7 @@ export class Intermedio2Service {
     public http: HttpClient
   ) { }
 
-  getMeducos() {
+  getMedicos() {
     return this.http.get('.....');
   }
   

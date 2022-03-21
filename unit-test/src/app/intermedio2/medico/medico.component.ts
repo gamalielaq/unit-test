@@ -1,4 +1,4 @@
-import { MedicosService } from './../../intermedio/espias/medicos.service';
+import { Intermedio2Service } from './intermedio2.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ export class MedicoComponent implements OnInit {
 
   medicos: any[] = [];
   constructor(
-    private _medicoService: MedicosService
+    private _intermedio2Service: Intermedio2Service
   ) { }
 
   ngOnInit(): void {
@@ -21,7 +21,7 @@ export class MedicoComponent implements OnInit {
   }
 
   obtenerMedicos() {
-    this._medicoService.getMedicos().subscribe(medicos => {
+    this._intermedio2Service.getMedicos().subscribe((medicos:any) => {
       this.medicos = medicos;
     })
   }
